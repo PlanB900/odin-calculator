@@ -23,6 +23,9 @@
     border-top-style:hidden;
     border-bottom-style:hidden;
     background-color:lightgray;
+
+    display:flex;
+    justify-content:flex-end;
 }
 .buttonBox {
     display:flex;
