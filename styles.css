@@ -1,13 +1,68 @@
+body {
+    background-color:#14365d;
+    display:flex;
+    align-items:center;
+    flex-flow:column nowrap;
+
+    margin:0;
+    height:100vh;
+}
+
+.header {
+    color:white;
+    font-family:sans-serif;
+    font-size:40px;
+    font-weight:100;
+}
+
+.footer {
+    margin-top:auto;
+    color:white;
+    background-color:#2F5C8F;
+    width:100%;
+    font-size:16px;
+    padding-top:5px;
+    padding-bottom:5px;
+    font-family:sans-serif;
+
+    display:flex;
+    justify-content:center;
+}
+
+a {
+    text-decoration:none;
+    color:white;
+}
+
 
 .calcContainer {
     width:300px;
     height:400px;
     border-style:solid;
-    border-color:black;
-    background-color:pink;
+    border-color:#b999be;
+    border-radius:5px;
+    background-color:#2F5C8F;
 
     display:flex;
     flex-flow:column nowrap;
+}
+
+#currentDisplay {
+    padding-right:10px;
+    font-size:40px;
+    height:50px;
+    color:white;
+    font-family:sans-serif;
+
+}
+
+#pastDisplay {
+
+    padding-right:10px;
+    height:40px;
+    font-size:30px;
+    color:white;
+    font-family:sans-serif;
 }
 
 .components {
@@ -18,11 +73,10 @@
 }
 
 .screen {
-    height:30px;
     width:auto;
     border-top-style:hidden;
     border-bottom-style:hidden;
-    background-color:lightgray;
+    background-color:#2F5C8F;
 
     display:flex;
     justify-content:flex-end;
@@ -33,6 +87,8 @@
     align-items:space-evenly;
     flex-grow:1;
     
+    gap:10px;
+    padding:10px;
 }
 
 .buttonRow {
@@ -40,6 +96,8 @@
     flex-flow:row nowrap;
     justify-content:space-evenly;
     flex-grow:1;
+
+    gap:10px;
 }
 
 button {
@@ -48,4 +106,41 @@ button {
     justify-content:center;
     align-items:center;
 
+    border-radius:40px;
+    border-style:solid;
+    font-family:sans-serif;
+
+    background-color:#b999be;
+    border-color:#b999be;
+    color:white;
+    font-size:22px;
 }
+
+.numberBtn {
+    background-color:#A96762;
+    border-color:#A96762;
+    color:white;
+    font-size:22px;
+}
+
+.operandBtn {
+    background-color:#d85c27;
+    border-color:#d85c27;
+    color:white;
+    font-size:22px;
+}
+
+#decimalBtn {
+    background-color:#A96762;
+    border-color:#A96762;
+    color:white;
+    font-size:22px;
+}
+
+#equalsBtn {
+    background-color:#d85c27;
+    border-color:#d85c27;
+    color:white;
+    font-size:22px;
+}
+

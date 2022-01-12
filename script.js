@@ -18,8 +18,8 @@ let numberBtn = Array.from(document.getElementsByClassName('numberBtn'));
 let clearBtn = document.getElementById('clearBtn');
 let allClearBtn = document.getElementById('allClearBtn');
 let operandBtn = Array.from(document.getElementsByClassName('operandBtn'));
-let currentDisplay = document.getElementById('screen2');
-let pastDisplay = document.getElementById('screen1');
+let currentDisplay = document.getElementById('currentDisplay');
+let pastDisplay = document.getElementById('pastDisplay');
 
 let total;
 let operation = ["","",""];
@@ -76,6 +76,8 @@ clearBtn.addEventListener('click',()=>{
     //Clear when third element of operation is empty, like if wrong operand is clicked
     if(operation[0] !== "" && operation[1] !== "" && operation[2] == ""){
         pastDisplay.textContent = pastDisplay.textContent.slice(0,-1);
+        currentDisplay.textContent = pastDisplay.textContent;
+        pastDisplay.textContent = "";
         operation[1] = "";
     }
 
